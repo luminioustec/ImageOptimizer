@@ -1,0 +1,7 @@
+﻿@model WebApplication9.Models.Model
+
+
+@foreach (var image in (IEnumerable<string>)ViewBag.Images)
+{
+      <img src = "@Url.Content(image)" alt = "" />
+}
